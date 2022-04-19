@@ -1,10 +1,17 @@
 .header{
+    background-color: transparent;
+    height: 68px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.header__container{
     align-items: center;
     height: 68px;
-    background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 0 2.75rem;
+    padding: 0 3rem;
 }
 
 .menu__container--navegation{

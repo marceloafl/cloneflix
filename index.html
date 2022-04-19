@@ -12,28 +12,59 @@
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/base.css" rel="stylesheet">
     <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/mainBanner.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="menu__container--navegation">
-            <a href="#" class="header__logo--link"><img src="./assets/images/netflix-logo.png" class="header__logo--img"></a>
-            <ul class="menu__navegation--main">
-                <li>Início</li>
-                <li>Séries</li>
-                <li>Filmes</li>
-                <li>Bombando</li>
-                <li>Minha lista</li>
+        <div class="header__container">
+            <div class="menu__container--navegation">
+                <a href="#" class="header__logo--link"><img src="./assets/images/netflix-logo.png" class="header__logo--img"></a>
+                <ul class="menu__navegation--main">
+                    <li>Início</li>
+                    <li>Séries</li>
+                    <li>Filmes</li>
+                    <li>Bombando</li>
+                    <li>Minha lista</li>
+                </ul>
+            </div>
+            <ul class="menu__navegation--secondary">
+                <li class="menu__item--search material-icons"></li>
+                <li class="menu__item--notification material-icons"></li>
+                <li class="menu__item--account">
+                    <div class="account--img"></div>
+                    <div class="account--arrow material-icons"></div>
+                </li>
             </ul>
         </div>
-        <ul class="menu__navegation--secondary">
-            <li class="menu__item--search material-icons"></li>
-            <li class="menu__item--notification material-icons"></li>
-            <li class="menu__item--account">
-                <div class="account--img"></div>
-                <div class="account--arrow material-icons"></div>
-            </li>
-        </ul>
     </header>
+    <main>
+        <section class="main-banner">
+            <div class="main-banner__bg">
+                <div class="main-banner__info">
+                    <div class="main-banner__title"><img src="./assets/images/titulo-banner.webp" class="main-banner__title--img"></div>
+                    <div class="main-banner__synopsis"><p class="synopsis--text">Muito a contragosto, um general de quatro estrelas se une a um excêntrico cientista com a missão de fazer decolar a mais nova agência militar dos EUA, a Força Espacial.</p></div>
+                    <div class="main-banner__buttons">
+                        <button class="buttons--main buttons--watch">
+                            <span class="watch--icon material-icons"></span>
+                            <p>Assistir</p>
+                        </button>
+                        <button class="buttons--main buttons--more-info">
+                            <span class="more-info--icon material-icons"></span>
+                            <p>Mais informações</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="main-banner__info-extra">
+                    <div class="button-repeat--container">
+                        <button class="buttons--repeat material-icons"></button>
+                    </div>
+                    <div class="button-min-age--container">
+                        <button class="buttons--min-age">12</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
