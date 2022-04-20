@@ -1,0 +1,30 @@
+.footer{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: 30px 130px 50px 20px;
+    grid-template-areas: 
+        "social social social social"
+        "links links links links"
+        "codigo codigo codigo codigo"
+        "copyright copyright copyright copyright";
+    margin: auto;
+    width: 980px;
+}
+
+.footer__social{
+    background-color: blue;
+    grid-area: social;
+    height: 30px;
+}
+
+.footer__social--list{
+    display: flex;
+}
+
+.social-img{
+    color: #FFF;
+    height: 30px;
+    margin-right: 1rem;
+    width: 30px;
+}

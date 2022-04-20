@@ -1,7 +1,7 @@
 .main-banner{
     height: 100vh;
     position: relative;
-    width: 100vw;
+    width: 100%;
 }
 
 .main-banner__bg{
@@ -23,6 +23,7 @@
 }
 
 .main-banner__title{
+    box-sizing: border-box;
     margin-bottom: 1.5rem;
 }
 
@@ -31,6 +32,7 @@
 }
 
 .synopsis--text{
+    box-sizing: border-box;
     color: #FFF;
     font-size: 1.125rem;
     font-weight: 700;
@@ -117,6 +119,7 @@
 .buttons--min-age{
     background: #F7C727;
     border-radius: 3px;
+    box-sizing: border-box;
     color: #000;
     font-size: 1.25rem;
     font-weight: 700;

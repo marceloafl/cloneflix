@@ -8,6 +8,7 @@
 
 .header__container{
     align-items: center;
+    box-sizing: border-box;
     height: 68px;
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@
 }
 
 .header__logo--img{
+    box-sizing: border-box;
     margin: 0 2rem 0 0;
     width: 92px;
 }
