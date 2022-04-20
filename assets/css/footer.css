@@ -1,21 +1,15 @@
 .footer{
-    background-color: red;
-    display: grid;
-    grid-template-columns: repeat(4, 245px);
-    grid-template-rows: 30px 130px 50px 20px;
-    grid-template-areas: 
-        "social social social social"
-        "links links links links"
-        "codigo codigo codigo codigo"
-        "copyright copyright copyright copyright";
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: 980px;
 }
 
 .footer__social{
-    background-color: blue;
-    grid-area: social;
+    /*background-color: blue;*/
     height: 30px;
+    margin-bottom: 1rem;
 }
 
 .footer__social--list{
@@ -24,7 +18,54 @@
 
 .social-img{
     color: #FFF;
-    height: 30px;
+    height: 25px;
     margin-right: 1rem;
-    width: 30px;
+    width: 25px;
+}
+
+.footer__links{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.footer__links--list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer__links--item{
+    color: #808080;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    width: calc(100% / 4);
+}
+
+.button--service-code{
+    background: none;
+    border: solid 1px #808080;
+    color: #808080;
+    height: 30px;
+    margin-bottom: 1rem;
+    width: 140px;
+}
+
+.footer__copyright{
+    display: flex;
+    width: 100%;
+}
+
+.copyright-text{
+    color: #808080;
+    font-size: .7rem;
+    margin: 0 .25rem 1rem;
+}
+
+.copyright-icon{
+    color: #808080;
+    font-size: .7rem;
+}
+
+.copyright-icon::before{
+    content: '\e90c';
 }

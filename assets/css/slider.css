@@ -1,5 +1,6 @@
 .section-slider{
     background-image: linear-gradient(rgba(20,20,20,0) 0%, rgba(20,20,20,1) 7%, rgba(20,20,20,1) 100%);
+    overflow: hidden;
     position: relative;
     top: -70px;
     width: 100%;
