@@ -15,6 +15,7 @@
     <link href="assets/css/mainBanner.css" rel="stylesheet">
     <link href="assets/css/slider.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
+    <link href="assets/css/interact.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -22,21 +23,62 @@
             <div class="menu__container--navegation">
                 <a href="#" class="header__logo--link"><img src="./assets/images/netflix-logo.png" class="header__logo--img"></a>
                 <ul class="menu__navegation--main">
-                    <li>Início</li>
-                    <li>Séries</li>
-                    <li>Filmes</li>
-                    <li>Bombando</li>
-                    <li>Minha lista</li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha lista</a></li>
                 </ul>
             </div>
             <ul class="menu__navegation--secondary">
-                <li class="menu__item--search material-icons"></li>
-                <li class="menu__item--notification material-icons"></li>
-                <li class="menu__item--account">
+                <li><button  class="menu__item--search material-icons"></button></li>
+                <li><button class="menu__item--notification material-icons"></button></li>
+                <li class="menu__item--account" data-icon="account">
                     <div class="account--img"></div>
-                    <div class="account--arrow material-icons"></div>
+                    <button class="account--arrow-closed material-icons"></button>
                 </li>
             </ul>
+        </div>
+        <div class="menu-secondary__container hide" data-menu="secondary">
+            <div class="menu-secondary__container-list">
+                <ul class="menu-secondary__list">
+                    <li class="menu-secondary__item">
+                        <img src="./assets/images/account-img-1.png" class="menu-secondary__img">
+                        <p class="menu-secondary__text">Usuário 1</p>
+                    </li>
+                    <li class="menu-secondary__item">
+                        <img src="./assets/images/account-img-2.png" class="menu-secondary__img">
+                        <p class="menu-secondary__text">Usuário 2</p>
+                    </li>
+                    <li class="menu-secondary__item">
+                        <img src="./assets/images/account-img-3.png" class="menu-secondary__img">
+                        <p class="menu-secondary__text">Usuário 3</p>
+                    </li>
+                    <li class="menu-secondary__item">
+                        <img src="./assets/images/account-img-4.png" class="menu-secondary__img">
+                        <p class="menu-secondary__text">Usuário 4</p>
+                    </li>
+                    <li class="menu-secondary__item">
+                        <span class="menu-secondary__svg edit material-icons"></span>
+                        <p class="menu-secondary__text">Gerenciar perfis</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-secondary__container-list">
+                <ul class="menu-secondary__list">
+                    <li class="menu-secondary__item">
+                        <span class="menu-secondary__svg account material-icons"></span>
+                        <p class="menu-secondary__text">Conta</p>
+                    </li>
+                    <li class="menu-secondary__item">
+                        <span class="menu-secondary__svg help material-icons"></span>
+                        <p class="menu-secondary__text">Centro de ajuda</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-secondary__container-list exit">
+                <p class="menu-secondary__text exit">Sair da Netflix</p>
+            </div>
         </div>
     </header>
     <main>
@@ -57,8 +99,8 @@
                     </div>
                 </div>
                 <div class="main-banner__info-extra">
-                    <div class="button-repeat--container">
-                        <button class="buttons--repeat material-icons"></button>
+                    <div class="button-sound--container">
+                        <button class="buttons--sound material-icons"></button>
                     </div>
                     <div class="button-min-age--container">
                         <button class="buttons--min-age">12</button>
@@ -69,9 +111,14 @@
 
         <section class="section-slider">
             <div class="slider__container">
-                <h2 class="slider__title">Minha lista</h2>
-                <div class="slider__container--queue">
-                    <div class="slider__arrow-container before">
+                <div class="slider__container--title" data-title>
+                    <h2 class="slider__title">Minha lista</h2>
+                    <div class="slider__title-all--container hides">
+                        <h3 class="slider__title-all">Ver tudo</h3><span class="slider__title-all--icon material-icons"></span>
+                    </div>
+                </div>
+                <div class="slider__container--queue" data-slider>
+                    <div class="slider__arrow-container before hides">
                         <span class="slider__arrow before material-icons"></span>
                     </div>
                     <ul class="slider slider--queue slider--previous">
@@ -95,30 +142,84 @@
                         <li class="slider__card"></li>
                         <li class="slider__card"></li>
                     </ul>
-                    <div class="slider__arrow-container next">
+                    <div class="slider__arrow-container next hides">
                         <span class="slider__arrow next material-icons"></span>
                     </div>
                 </div>
             </div>
             <div class="slider__container">
-                <h2 class="slider__title">Continuar assistindo</h2>
-                <ul class="slider">
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                </ul>
+                <div class="slider__container--title" data-title>
+                    <h2 class="slider__title">Continuar assistindo</h2>
+                    <div class="slider__title-all--container hides">
+                        <h3 class="slider__title-all">Ver tudo</h3><span class="slider__title-all--icon material-icons"></span>
+                    </div>
+                </div>
+                <div class="slider__container--queue" data-slider>
+                    <div class="slider__arrow-container before hide">
+                        <span class="slider__arrow before material-icons"></span>
+                    </div>
+                    <ul class="slider slider--queue slider--previous">
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                    </ul>
+                    <ul class="slider">
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                    </ul>
+                    <ul class="slider slider--queue slider--next">
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                    </ul>
+                    <div class="slider__arrow-container next hides">
+                        <span class="slider__arrow next material-icons"></span>
+                    </div>
+                </div>
             </div>
             <div class="slider__container">
-                <h2 class="slider__title">Populares</h2>
-                <ul class="slider">
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                    <li class="slider__card"></li>
-                </ul>
+                <div class="slider__container--title" data-title>
+                    <h2 class="slider__title">Populares</h2>
+                    <div class="slider__title-all--container hides">
+                        <h3 class="slider__title-all">Ver tudo</h3><span class="slider__title-all--icon material-icons"></span>
+                    </div>
+                </div>
+                <div class="slider__container--queue" data-slider>
+                    <div class="slider__arrow-container before hides">
+                        <span class="slider__arrow before material-icons"></span>
+                    </div>
+                    <ul class="slider slider--queue slider--previous">
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                    </ul>
+                    <ul class="slider">
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                    </ul>
+                    <ul class="slider slider--queue slider--next">
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                        <li class="slider__card"></li>
+                    </ul>
+                    <div class="slider__arrow-container next hides">
+                        <span class="slider__arrow next material-icons"></span>
+                    </div>
+                </div>
             </div>
         </section>
         <footer class="footer">
@@ -161,11 +262,11 @@
             <section class="footer__copyright">
                 <span class="copyright-icon material-icons"></span>
                 <p class="copyright-text">1997 - 2022 Netflix, Inc.</p>
-                <p class="copyright-text">(Clone da Netflix desenvolvido por Marcelo Lemes.)</p>
+                <p class="copyright-text">*Clone da Netflix desenvolvido por Marcelo Lemes.</p>
             </section>
         </footer>
     </main>
-    
+    <script src="./js/interact.js"></script>
 </body>
 </html>
 

@@ -44,6 +44,7 @@
 .menu__item--search::before{
     content: '\e8b6';
     color: #FFF;
+    cursor: pointer;
     height: 32px;
     width: 32px;
 }
@@ -51,12 +52,14 @@
 .menu__item--notification::before{
     content: '\e7f4';
     color: #FFF;
+    cursor: pointer;
     height: 32px;
     width: 32px;
 }
 
 .menu__item--account{
     align-items: center;
+    cursor: pointer;
     display: flex;
     width: 72px;
 }
@@ -68,9 +71,75 @@
     width: 32px;
 }
 
-.account--arrow::before{
+.account--arrow{
+    cursor: pointer;
+}
+
+.account--arrow-closed::before{
     content: '\e5c5';
     color: #FFF;
 }
 
+.account--arrow-opened::before{
+    content: '\e5c7';
+    color: #FFF;
+}
 
+.menu-secondary__container{
+    background-color: #000;
+    right: 3rem;
+    position: absolute;
+    width: 180px;
+}
+
+.menu-secondary__container-list{
+    border-bottom: solid 1px #808080;
+    padding: .75rem;
+}
+
+.menu-secondary__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-secondary__item{
+    align-items: center;
+    display: flex;
+    margin: .5rem 0;
+}
+
+.menu-secondary__img{
+    border-radius: 3px;
+    margin-right: .75rem;
+}
+
+.menu-secondary__text{
+    color: #FFF;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.menu-secondary__svg{
+    color: #808080;
+    margin-right: .75rem;
+}
+
+.menu-secondary__svg.edit::before{
+    content: '\e3c9';
+}
+
+.menu-secondary__svg.account::before{
+    content: '\e7fd';
+}
+
+.menu-secondary__svg.help::before{
+    content: '\e8fd';
+}
+
+.menu-secondary__container-list.exit{
+    border: none;
+}
+
+.menu-secondary__text.exit{
+    text-align: center;
+}
