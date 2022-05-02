@@ -50,3 +50,17 @@ sliderQueue.forEach(slider => {
         hideElement(elementNext);
     })
 })
+
+
+const btnMobileMenu = document.querySelector('[data-button="mobile-menu"]');
+const mobileMenu = document.querySelector('[data-menu="mobile"]');
+
+btnMobileMenu.addEventListener('mouseover', function(){
+    const element = mobileMenu;
+    showElement(element);  
+})
+
+mobileMenu.addEventListener('mouseleave', function(){
+    const element = mobileMenu;
+    hideElement(element);    
+})

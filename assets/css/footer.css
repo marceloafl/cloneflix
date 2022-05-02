@@ -1,13 +1,11 @@
 .footer{
-    /*background-color: red;*/
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 980px;
+    width: 70%;
 }
 
 .footer__social{
-    /*background-color: blue;*/
     height: 30px;
     margin-bottom: 1rem;
 }
@@ -31,7 +29,6 @@
 .footer__links--list{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .footer__links--item{
@@ -68,4 +65,10 @@
 
 .copyright-icon::before{
     content: '\e90c';
+}
+
+@media screen and (max-width: 884px){
+    .footer__links--item{
+        width: calc(100% / 2);
+    }
 }

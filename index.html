@@ -22,6 +22,17 @@
         <div class="header__container">
             <div class="menu__container--navegation">
                 <a href="#" class="header__logo--link"><img src="./assets/images/netflix-logo.png" class="header__logo--img"></a>
+                <button class="menu-mobile__button" data-button="mobile-menu">
+                    <p class="menu-mobile__button--text">Navegar</p>
+                    <span class="menu-mobile__button--icon material-icons"></span>
+                </button>
+                <ul class="menu-mobile__navegation--main hide" data-menu="mobile">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                </ul>
                 <ul class="menu__navegation--main">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Séries</a></li>
@@ -81,7 +92,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="main__container">
         <section class="main-banner">
             <div class="main-banner__bg">
                 <div class="main-banner__info">
@@ -117,33 +128,33 @@
                         <h3 class="slider__title-all">Ver tudo</h3><span class="slider__title-all--icon material-icons"></span>
                     </div>
                 </div>
-                <div class="slider__container--queue" data-slider>
+                <div class="slider__container--queue" data-slider="previous">
                     <div class="slider__arrow-container before hides">
-                        <span class="slider__arrow before material-icons"></span>
+                        <a href="#" class="slider__arrow before material-icons" data-arrow="previous"></a>
                     </div>
-                    <ul class="slider slider--queue slider--previous">
-                        <li class="slider__card"><img src="" data-image="previous"></li>
-                        <li class="slider__card"><img src="" data-image="previous"></li>
-                        <li class="slider__card"><img src="" data-image="previous"></li>
-                        <li class="slider__card"><img src="" data-image="previous"></li>
-                        <li class="slider__card"><img src="" data-image="previous"></li>
+                    <ul class="slider slider--queue slider--previous" data-place="0">
+                        <li class="slider__card"><img src="" data-image="previous"><p class="numero">0</p></li>
+                        <li class="slider__card"><img src="" data-image="previous"><p class="numero">0</p></li>
+                        <li class="slider__card"><img src="" data-image="previous"><p class="numero">0</p></li>
+                        <li class="slider__card"><img src="" data-image="previous"><p class="numero">0</p></li>
+                        <li class="slider__card"><img src="" data-image="previous"><p class="numero">0</p></li>
                     </ul>
-                    <ul class="slider">
-                        <li class="slider__card"><img src="" data-image="main"></li>
-                        <li class="slider__card"><img src="" data-image="main"></li>
-                        <li class="slider__card"><img src="" data-image="main"></li>
-                        <li class="slider__card"><img src="" data-image="main"></li>
-                        <li class="slider__card"><img src="" data-image="main"></li>
+                    <ul class="slider slider--current" data-place="1">
+                        <li class="slider__card"><img src="" data-image="main"><p class="numero">1</p></li>
+                        <li class="slider__card"><img src="" data-image="main"><p class="numero">1</p></li>
+                        <li class="slider__card"><img src="" data-image="main"><p class="numero">1</p></li>
+                        <li class="slider__card"><img src="" data-image="main"><p class="numero">1</p></li>
+                        <li class="slider__card"><img src="" data-image="main"><p class="numero">1</p></li>
                     </ul>
-                    <ul class="slider slider--queue slider--next">
-                        <li class="slider__card"><img src="" data-image="next"></li>
-                        <li class="slider__card"><img src="" data-image="next"></li>
-                        <li class="slider__card"><img src="" data-image="next"></li>
-                        <li class="slider__card"><img src="" data-image="next"></li>
-                        <li class="slider__card"><img src="" data-image="next"></li>
+                    <ul class="slider slider--queue slider--next" data-place="2">
+                        <li class="slider__card"><img src="" data-image="next"><p class="numero">2</p></li>
+                        <li class="slider__card"><img src="" data-image="next"><p class="numero">2</p></li>
+                        <li class="slider__card"><img src="" data-image="next"><p class="numero">2</p></li>
+                        <li class="slider__card"><img src="" data-image="next"><p class="numero">2</p></li>
+                        <li class="slider__card"><img src="" data-image="next"><p class="numero">2</p></li>
                     </ul>
                     <div class="slider__arrow-container next hides">
-                        <span class="slider__arrow next material-icons"></span>
+                        <a href="#" class="slider__arrow next material-icons" data-arrow="next"></a>
                     </div>
                 </div>
             </div>
@@ -267,7 +278,7 @@
         </footer>
     </main>
     <script src="./js/interact.js"></script>
-    <script src="./js/movies.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
 

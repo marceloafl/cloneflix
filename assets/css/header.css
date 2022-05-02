@@ -1,15 +1,17 @@
 .header{
     background-color: transparent;
-    height: 68px;
+    /*height: 68px;*/
+    height: 10vh;
+    min-width: 100vw;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
 }
 
 .header__container{
     align-items: center;
     box-sizing: border-box;
-    height: 68px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 3rem;
@@ -23,30 +25,51 @@
 .header__logo--img{
     box-sizing: border-box;
     margin: 0 2rem 0 0;
-    width: 92px;
+    /*width: 92px;*/
+    width: 6.5vw;
+}
+
+.menu-mobile__button{
+    display: none;
+}
+
+.menu-mobile__button--text{
+    color:#FFF;
+}
+
+.menu-mobile__button--icon::before{
+    color: #FFF;
+    content: '\e5c5';
+}
+
+.menu-mobile__navegation--main{
+    display: none;
 }
 
 .menu__navegation--main{
     color: #FFF;
     display: flex;
-    font-size: .875rem;
+    /*font-size: .875rem;*/
+    font-size: 2.5vh;
     justify-content: space-between;
-    width: 360px;
+    /*width: 360px;*/
+    width: 30vw;
 }
 
 .menu__navegation--secondary{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 180px;
+    /*width: 180px;*/
+    width: 14vw;
 }
 
 .menu__item--search::before{
-    content: '\e8b6';
     color: #FFF;
+    content: '\e8b6';
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    /*height: 32px;*/
+    /*width: 32px;*/
 }
 
 .menu__item--notification::before{
@@ -143,3 +166,35 @@
 .menu-secondary__text.exit{
     text-align: center;
 }
+
+
+@media screen and (max-width: 884px){
+    .menu-mobile__button{
+        align-items: center;
+        display: flex;
+    }
+
+    .menu__navegation--main{
+        display: none;
+    }
+
+    .menu-mobile__navegation--main{
+        align-items: center;
+        background-color: #000;
+        border-top: solid 2px #FFF;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        position: absolute;
+        top: 68px;
+        width: 250px;
+    }
+
+    .menu-mobile__navegation--main li{
+        color:#FFF;
+        margin: 1rem 0;
+    }
+
+}
+
+

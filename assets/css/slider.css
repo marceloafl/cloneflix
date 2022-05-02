@@ -3,14 +3,12 @@
     overflow: hidden;
     position: relative;
     top: -70px;
-    width: 100%;
 }
 
 .slider__container{    
     height: 200px;
     margin: 20px 0;
     padding: 0 0 0 3rem;
-    width: cacl(100% - 3rem);
 }
 
 .slider__container--title{
@@ -87,7 +85,7 @@
 .slider__card{
     background-color: yellow;
     border-radius: 2px;
-    height: 140px;
+    height: 100%;
     margin: 0 3px;
     overflow: hidden;
     width: 245px;
@@ -101,11 +99,24 @@
     background-color: blue;
 }
 
+/*.slider--current{
+    left: 0;
+    right: 0;
+}*/
+
 .slider--previous{
     right: 96.5%;
 }
 
-.slider.slider--next{
+.slider--next{
     left: 96.5%;
 }
 
+
+
+/*APAGAR APÓS OS TESTES*/
+.numero{
+    font-size: 5rem;
+    color: #FFF;
+    text-align: center;
+}
