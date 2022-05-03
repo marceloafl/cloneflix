@@ -2,13 +2,15 @@
     background-image: linear-gradient(rgba(20,20,20,0) 0%, rgba(20,20,20,1) 7%, rgba(20,20,20,1) 100%);
     overflow: hidden;
     position: relative;
-    top: -70px;
+    top: -12vh;
 }
 
 .slider__container{    
     height: 200px;
-    margin: 20px 0;
-    padding: 0 0 0 3rem;
+    margin: 2.5vh 0;
+    position: relative;
+    width: 100vw;
+    height: 30vh;
 }
 
 .slider__container--title{
@@ -18,9 +20,9 @@
 
 .slider__title{
     color: #FFF;
-    font-size: 1.2rem;
+    font-size: 3vh;
     font-weight: 700;
-    margin-right: 1rem;
+    margin: 0 3vh 2vh 10vh;
 }
 
 .slider__title-all--container{
@@ -30,7 +32,7 @@
 
 .slider__title-all{
     color: #FFF;
-    font-size: .8rem;
+    font-size: 2vh;
     font-weight: 700;
 }
 
@@ -41,31 +43,32 @@
 
 .slider__container--queue{
     display: flex;
-    height: 200px;
+    height: 23vh;
+    width: 100%;
 }
 
 .slider__arrow-container{
     align-items: center;
     display: flex;
-    height: 170px;
+    height: inherit;
     position: absolute;
-    width: 60px;
+    width: 4vw;
     z-index: 1;
 }
 
 .slider__arrow-container.before{
-    left: 0;
+    left: .5vw;
 }
 
 .slider__arrow-container.next{
-    right: 0;
+    right: 2vw;
 }
 
 .slider__arrow{
     color:#FFF;
-    font-size: 4.5rem;
-    position: relative;
-    
+    font-size: 4.5rem;;
+    position: relative; 
+    width: 1vw;   
 }
 
 .slider__arrow.before::before{
@@ -78,38 +81,41 @@
 
 .slider{
     display: flex;
-    height: 140px;
-    margin-top: 1rem;
 }
 
 .slider__card{
     background-color: yellow;
     border-radius: 2px;
     height: 100%;
-    margin: 0 3px;
+    margin: 0 .2vw;
     overflow: hidden;
-    width: 245px;
+    width: 100%;
 }
 
 .slider--queue{
     position: absolute;
+    height: inherit;
+    width: 92vw;
+
 }
 
 .slider--queue .slider__card{
     background-color: blue;
+    width: 100%;
 }
 
-/*.slider--current{
-    left: 0;
-    right: 0;
-}*/
-
 .slider--previous{
-    right: 96.5%;
+    right: 96vw;
+}
+
+.slider--current{
+    margin: auto;
+    height: 100%;
+    width: 92%;
 }
 
 .slider--next{
-    left: 96.5%;
+    left: 96vw;
 }
 
 
