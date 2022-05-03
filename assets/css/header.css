@@ -56,7 +56,12 @@
     align-items: center;
     display: flex;
     justify-content: space-around;
+    height: 100%;
     width: 12vw;
+}
+
+.menu__navegation--secondary{
+    line-height: 100%;
 }
 
 .menu__item--search::before{
@@ -82,6 +87,8 @@
     background-image: url(../images/account-img.png);
     background-repeat: no-repeat;
     border-radius: 3px;
+    height: 32px;
+    width: 32px;
 }
 
 .account--arrow{
@@ -189,6 +196,11 @@
         margin: 1rem 0;
     }
 
+
+    .account--img{
+        display: none;
+    }
+    
 }
 
 
