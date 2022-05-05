@@ -6,6 +6,7 @@ function hideElement(element){
     element.classList.add('hide');
 }
 
+// MENU ACCOUNT
 const account = document.querySelector('[data-icon="account"]');
 const secondaryMenu = document.querySelector('[data-menu="secondary"]');
 
@@ -20,7 +21,7 @@ secondaryMenu.addEventListener('mouseleave', function(){
 })
 
 
-
+// VER TUDO TÍTULO
 const titles = document.querySelectorAll('[data-title]');
 titles.forEach(title => {
     title.addEventListener('mouseover', function(){
@@ -34,6 +35,7 @@ titles.forEach(title => {
     })
 })
 
+// SETA LIDER
 const sliderQueue = document.querySelectorAll('[data-slider]');
 sliderQueue.forEach(slider => {
     slider.addEventListener('mouseover', function(){
@@ -41,7 +43,7 @@ sliderQueue.forEach(slider => {
         const elementNext = slider.lastChild.previousSibling;
         showElement(elementPrevious);
         showElement(elementNext);
-    })
+    });
 
     slider.addEventListener('mouseleave', function(){
         const elementPrevious = slider.firstChild.nextSibling;
@@ -51,7 +53,7 @@ sliderQueue.forEach(slider => {
     })
 })
 
-
+// MENU MOBILE
 const btnMobileMenu = document.querySelector('[data-button="mobile-menu"]');
 const mobileMenu = document.querySelector('[data-menu="mobile"]');
 
