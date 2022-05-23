@@ -89,7 +89,11 @@
     height: inherit;
     margin: 0 .2vw;
     overflow: hidden;
-    width: 100%;
+}
+
+.slider__card--img{
+    height: inherit;
+    width: inherit;
 }
 
 .slider--queue{
